@@ -1,0 +1,14 @@
+{
+    "name": "ebook-library-app",
+    "version": "1.0.0",
+    "description": "MERN Stack Ebook Library",
+    "scripts": {
+        "start": "concurrently \"npm run server\" \"npm run client\"",
+        "server": "cd server && npm start",
+        "client": "cd client && npm run dev",
+        "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+    },
+    "dependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
